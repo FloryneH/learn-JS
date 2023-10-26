@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Medium.woff2);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-MediumItalic.woff2);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-SemiBold.woff2);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Bold.woff2);
+    font-weight: 700;
+}
+:root {
+    font-size: 100%;
+    --primary-color: #ffffff;
+    --color-red: #FF7979;
+    --color-green: #38CC8B;
+    --color-purple: #5E54A4;
+    --color-black: #3D3B48;
+}
+body {
+    margin: 0;
+    font-family: Poppins;
+    background-color: var(--color-red);
+    background-image: url(assets/images/fond.svg);
+    background-size: cover;
+    color: var(--primary-color);
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 3.125rem;
+    box-sizing: border-box;
+}
+#containerLeft {
+    padding: 10.5rem 4.3125rem 10.5rem 0;
+}
+h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+    letter-spacing: -0.0325rem;
+    width: 26.875rem;
+    margin: 0 0 1.75rem 0;
+}
+#containerLeft>p {
+    font-weight: 500;
+    width: 31.3125rem;
+}
+#containerRight {
+    max-width: 33.75rem;
+    min-width: 20.4375rem;
+}
+#containerRight>p:first-child {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    letter-spacing: 0.0169rem;
+    background-color: var(--color-purple);
+    text-align: center;
+    padding: 1.0625rem;
+    margin: 0 0 1.5rem 0;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    min-width: 20.4375rem;
+    box-sizing: border-box;
+}
+#containerRight>p>span {
+    font-weight: 500;
+}
+form {
+    background-color: var(--primary-color);
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    padding: 2.5rem;
+    min-width: 20.4375rem;
+    box-sizing: border-box;
+}
+input {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.9375rem 2rem;
+    box-sizing: border-box;
+    margin-top: 1.25rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 0.875rem
+}
+.champ:focus {
+    border: 1px solid #5E54A4;
+    outline: none;
+    font-weight: 600;
+}
+.champ:focus::placeholder {
+    color: transparent;
+}
+form.errorA .champ:invalid {
+    /* background-image: url(media/error.svg); */
+    background-repeat: no-repeat;
+    background-position: left 95% center;
+    color: var(--color-red);
+    /* border: 1px solid var(--color-red); */
+}
+.error {
+    display: none;
+    width: 100%;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    text-align: right;
+    color: #FF7979;
+    margin-top: 6px;
+}
+#sub {
+    background-color: var(--color-green);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+#sub:hover {
+    background: #77E2B3;
+}
+form>p {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    color: #BAB7D4;
+    text-align: center;
+}
+a {
+    color: var(--color-red);
+    font-weight: 700;
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+    #container {
+        margin: 0 3.125rem;
+    }
+    #containerLeft {
+        padding: 10.5rem 0;
+    }
+    h2 {
+        font-size: 1.75rem;
+        width: 15.0625rem;
+    }
+    #containerLeft>p {
+        width: 20.4375rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    #container {
+        flex-direction: column;
+        height: auto;
+        margin: 4.25rem 3.125rem;
+    }
+    #containerLeft {
+        padding: 0;
+    }
+    h2 {
+        text-align: center;
+        margin: auto;
+    }
+    #containerLeft>p {
+        text-align: center;
+    }
+}
