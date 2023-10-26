@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evaluer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="container_1">
+        <p><img src="assets/star.svg" alt="Logo d'une étoile orange dans un cercle gris"></p>
+        <h2>How did we do?</h2>
+        <p class="para">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        
+        <form id="formulaire">
+            <div id="button_note">
+                <div>
+                    <input type="radio" id="value_1" class="valeur" name="note" value="1">
+                    <label for="value_1">1</label> 
+                </div>
+
+                <div>
+                    <input type="radio" id="value_2" class="valeur" name="note" value="2">
+                    <label for="value_2">2</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="value_3" class="valeur" name="note" value="3">
+                    <label for="value_3">3</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="value_4" class="valeur" name="note" value="4">
+                    <label for="value_4">4</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="value_5" class="valeur" name="note" value="5">
+                    <label for="value_5">5</label>
+                </div>
+            </div>
+            
+            <button id="sub" type="submit">submit</button>
+        
+        </form>
+    </div>
+
+    <div class="container" id="container_2">
+
+        <p><img src="assets/phone.svg" alt="Icon d'un téléphone portable avec une carte bancaire orange ainsi qu'un ticket qui sorte du téléphone "></p>
+        <p id="select">You selected 4 out of 5</p>
+        <h2>Thank you!</h2>
+        <p class="para" id="para_a">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        
+    </div>
+</body>
+</html>
