@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+}
+#container {
+    background-color: #FFFFFF;
+    border-radius: 1.4375rem;
+    max-width: 920px;
+    height: 509px;
+    display: flex;
+    margin: 3.125rem auto;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+}
+#containerLeft {
+    background-image: url(media/illu_ombre.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 24.3125rem;
+}
+#femmeMobile {
+    display: none;
+}
+#carton { 
+    position: relative;
+    bottom: 19.375rem;
+    right: 2.8125rem;
+}
+#containerRight {
+    width: 33.26rem;
+    padding: 4.0625rem 5.9375rem 5.1875rem 5.4475rem;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 0 2.1875rem;
+}
+#containerRight>div>div {
+    border-bottom: 1px solid #e8e8ea;
+}
+.question {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #4B4C5F;
+    margin: 0.9375rem 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+.question:hover {
+    color: #F47B56;
+}
+.question:focus {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E1F36;
+}
+.question:focus>img {
+    transform: rotate(180deg);
+}
+.reponse {
+    display: none;
+    font-weight: 400;
+    font-size: 12px;
+    color: #787887;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1035px) {
+    #container {
+        margin: 3.125rem ;
+    }
+    #containerRight {
+        padding: 4.0625rem 3.125rem;
+    }
+    #femme, #carton {
+        display: none;
+    }
+    #femmeMobile {
+        display: block;
+        width: 389px;
+        height: 509px;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    #container {
+        flex-direction: column;
+        max-width: 327px;
+        height: auto;
+        margin: 0 auto 40px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #containerLeft {
+        background-image: none;
+        width: 14.75rem;
+        height: 13.1875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 110px;
+        left: 44px;
+    }
+    #femmeMobile {
+        width: 240px;
+        height: 211px;
+    }
+    #containerRight {
+        background-color: #FFFFFF;
+        border-radius: 1.4375rem;
+        width: 20.4375rem;
+        padding: 8.25rem 1.5rem 3rem;
+        box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    }
+    h2 {
+        text-align: center;
+    }
+}
