@@ -1,0 +1,172 @@
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(assets/fonts/SpaceGrotesk-Medium.woff2);
+    font-weight: 500;
+}
+:root {
+    font-size: 100%;
+    --deep-violet: #21092F;
+    --purplish-grey: #8F8694;
+    --light-grey: #DFDEE0;
+    --color-white: #FFFFFF;
+    --color-red: #FF5050;
+}
+body {
+    margin: 0;
+    font-family: SpaceGrotesk;
+    font-size: 1.125rem;
+}
+#container {
+    height: 100vh;
+    background-image: url(assets/images/background.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    padding: 11.6875rem 10.25rem;
+    box-sizing: border-box;
+    justify-content: center;
+}
+#containerLeft {
+    width: 541px;
+}
+#cardA {
+    width: 27.9375rem;
+    background: url(assets/images/backcard.svg), linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 1.75rem 2rem;
+    box-sizing: border-box;
+    margin: 0 5.875rem 2.3125rem 0;
+}
+#cardA>img {
+    margin: 0 0.94rem 4rem 0;
+}
+#cardA>p {
+    color: var(--color-white);
+    font-size: 1.75rem;
+    letter-spacing: 0.2139rem;
+    margin: 0 0 1.5938rem 0;
+}
+#info {
+    display: flex;
+    justify-content: space-between;
+}
+#info>p {
+    color: var(--color-white);
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+#cardB {
+    width: 27.9375rem;
+    background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
+    border-radius: 10px;
+    padding-top: 1.4375rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.875rem;
+}
+#black {
+    width: 100%;
+    height: 3.375rem;
+    background-color: #2F2F2F;
+}
+#cardB>p {
+    color: var(--color-white);
+    font-size: 0.875rem;
+    text-align: right;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    background-color:  #ADB5BE;
+    width: 22.5625rem;
+    padding: 0.625rem;
+    border-radius: 4px;
+    margin: 1.5rem auto 0;
+}
+#cardB>img {
+    margin: 2.0625rem auto;
+}
+#containerRight {
+    width: 23.8125rem;
+    padding: 5.5rem 0 5.5rem 7.9375rem;
+}
+form>div {
+    display: flex;
+    flex-direction: column;
+}
+label, legend {
+    color: var(--deep-violet);
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5625rem;
+}
+input {
+    border: 1px solid var(--light-grey);
+    border-radius: 0.5rem;
+    width: 23.8125rem;
+    padding: 0.6875rem 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1.625rem;
+}
+input::placeholder {
+    color: var(--deep-violet);
+    opacity: 0.25;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #610595;
+    color: var(--deep-violet);
+}
+#dateSecu {
+    display: flex;
+    flex-direction: row;
+}
+fieldset {
+    border: none;
+    display: flex;
+    padding: 0;
+    width: 10.625rem;
+    margin: 0;
+}
+fieldset>input {
+    width: 5rem;
+}
+fieldset>input[name=annee] {
+    margin-left: 0.625rem;
+}
+#dateSecu>div {
+    width: 190px;
+    margin-left: 1.25rem;
+}
+#dateSecu>div>label{
+    margin-bottom: 0.5625rem;
+}
+#dateSecu>div>input {
+    width: 100%;
+}
+input[type=submit] {
+    background-color: var(--deep-violet);
+    color: var(--color-white);
+    height: 3.3125rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+#checked {
+    text-align: center;
+}
+#thanksYou {
+    text-align: center;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--deep-violet);
+    margin-top: 2.1875rem;
+}
+#addDetails {
+    text-align: center;
+    color: var(--purplish-grey);
+    margin: 1rem 0 3rem 0;
+}
